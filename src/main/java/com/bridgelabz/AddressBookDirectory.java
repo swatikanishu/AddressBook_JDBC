@@ -1,5 +1,4 @@
 package com.bridgelabz;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -233,10 +232,10 @@ import java.util.Scanner;
         public List<Integer> getCountOfEmployeesBasedOnState(IOService ioService) {
 
             List<Integer> countBasedOnState = new ArrayList<Integer>();
-            if(ioService.equals(IOService.DB_IO))
+            if(ioService.equals(AddressBook.IOService.DB_IO))
                 countBasedOnState = new AddressBookDBService().getCountOfEmployeesBasedOnStateUsingStatement();
             return countBasedOnState;
         }
 
     }
-}
+
